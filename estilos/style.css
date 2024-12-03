@@ -1,0 +1,128 @@
+/*
+    ESTILOS PARA EL EJERCICIO JS12
+    Mariona Batalla Taylor
+*/
+
+/* importamos la fuente Montserrat de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poiret+One&display=swap');
+
+
+/* definimos los colores para que sea más fácil cambiarlos*/
+:root
+{
+    --letraWeb:#959498;
+    --fondoWeb:#6d6875;
+    --fondoCalculadora: #b5838d;
+    --pantalla: #ffcdb2;
+    --letraPantalla: #aa7c63;
+    --botonNormal:#e5989b;
+    --botonIgual:#ffb4a2;
+    --colorHoverBotones:#ffb4a2;
+    --colorBotonClick:#6d6875;
+    --fontPantalla:'Poiret One', sans-serif;
+}
+
+body
+{
+    font-family:sans-serif;
+    background-color:var(--fondoWeb);
+    /*background-image:url("../img/bg.jpg");
+    background-size:cover;*/
+    font-family:'Montserrat', sans-serif;
+}
+
+h1, footer
+{
+    color:var( --letraWeb);
+}
+.centro
+{
+    text-align:center;
+}
+
+main
+{
+    background-color:var( --fondoCalculadora);
+    width: 350px;
+    height:auto;
+    margin: 0 auto; /*centramos horizontalmente*/
+    border-radius:20px;
+}
+
+#pantalla
+{
+    background-color:var(--pantalla);
+    color:var(--letraPantalla);
+    height:180px;
+    text-align:right;
+    
+    font-family:var(--fontPantalla);
+    font-weight:bold; 
+    padding-right: 25px;
+    padding-left:25px; /**************HELP! NO ME LO HACE*/
+    
+    border-radius:20px 20px 0 0; /* solo redondear la parte de arriba*/
+    overflow:hidden; /* para que no se salgan los números de la pantalla */
+
+    /*para centrar el contenido verticalmente*/
+    display:flex;
+    flex-direction:column;
+    justify-content:right;
+    
+}
+
+#pantalla #breadcrum
+{
+    font-size:small;
+    font-family:'Montserrat', sans-serif;
+    font-weight:normal;
+    padding-top:30px;
+}
+
+#pantalla #resultado
+{
+    font-size:50px;
+    margin-top:5px;
+}
+
+
+#botones
+{
+    padding:15px 20px 15px 20px;
+    /* usamos grid para la distribución de los botones */
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+
+.boton
+{
+    background-color:var(--botonNormal);
+    width:70px;
+    height:50px;
+    border-radius: 5px ;
+    justify-self: center;
+    display:flex;
+
+    /* centramos verticalmente el texto de los botones */
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+#botonIgual
+{
+    background-color:var(--botonIgual);
+    color:white;
+}
+
+footer
+{
+    font-size:small;
+}

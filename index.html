@@ -1,0 +1,61 @@
+<!--
+    CREACIÓN DE UNA CALCULADORA SIMILAR A LA CALCULADORA 
+    ESTÁNDAR DE WINDOWS
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mariona Batalla Taylor">
+        <meta name="description" content="Calculadora con JavaScript">
+        <title>Calculadora JS by Taylor</title>
+        <link  rel="stylesheet" href="estilos/style.css" type="text/css">
+    </head>
+    <body>
+        <h1 class="centro">Mi primera calculadora en JavaScript</h1>
+        
+        <main><!--contenedor calculadora--> 
+            <div id="pantalla">
+                <p id="breadcrum">0</p>
+                <p id="resultado">0</p>
+            </div>
+            <div id="botones">
+                <div class="boton op" id="percent">&percnt;</div><!--símbolo del porcentaje-->
+                <div class="boton op" id="ce">CE</div>
+                <div class="boton op" id="ce2">C</div>
+                <div class="boton op" id="borrarCifra">&#9756</div><!--añadimos un símbolo-->
+                <div class="boton op" id="inverso"><sup>1</sup>/<sub>x</sub></div>
+                <div class="boton op" id="cuadrado">x<sup>2</sup></div>
+                <div class="boton op" id="sqrt">&#8730;</div><!--símbolo de raíz cuadrada-->
+                <div class="boton op" id="division">/</div> <!--símbolo de la división &divide;-->
+                <div class="boton num" id="7">7</div>
+                <div class="boton num" id="8">8</div>
+                <div class="boton num" id="9">9</div>
+                <div class="boton op" id="multiplicacion">x</div><!--símbolo de la multiplicación &#215;-->
+                <div class="boton num" id="4">4</div>
+                <div class="boton num" id="5">5</div>
+                <div class="boton num" id="6">6</div>
+                <div class="boton op" id="resta">-</div><!--símbolo de la resta &#8722;-->
+                <div class="boton num" id="1">1</div>
+                <div class="boton num" id="2">2</div>
+                <div class="boton num" id="3">3</div>
+                <div class="boton op" id="suma">+</div><!--símbolo de la suma &plus;-->
+                <div class="boton op" id="masMenos">&mnplus;</div><!--símbolo del más o menos-->
+                <div class="boton num" id="0">0</div>
+                <div class="boton op" id="coma">,</div>
+                <div class="boton op" id="botonIgual">&equals;</div><!--símbolo del igual-->
+
+            </div>
+        </main>
+
+        <footer class="centro">
+            <p>Mariona Batalla Taylor || April 2024 || IronHack</p>
+        </footer>
+
+        <!--JAVASCRIPT: lo ponemos a bajo porque primero tiene que cargarse el DOM-->
+        <!--si necesitamos que el DOM esté cargado, lo ponemos a bajo-->
+        <script src="script/script.js"></script>
+    </body>
+    </html>
